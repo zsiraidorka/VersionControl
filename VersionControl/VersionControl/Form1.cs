@@ -17,8 +17,7 @@ namespace VersionControl
         public Form1()
         {
             InitializeComponent();
-            lblLastName.Text = Resource.LastName; // label1
-            lblFirstName.Text = Resource.FirstName; // label2
+            lblLastName.Text = Resource.FullName; // label1
             btnAdd.Text = Resource.Add; // button1
 
             listUsers.DataSource = users;
@@ -30,8 +29,8 @@ namespace VersionControl
         {
             var u = new User()
             {
-                LastName = txtLastName.Text,
-                FirstName = txtFirstName.Text
+                FullName = txtLastName.Text,
+               
             };
             users.Add(u);
         }
