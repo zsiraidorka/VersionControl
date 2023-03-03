@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,9 +31,24 @@ namespace VersionControl
             var u = new User()
             {
                 FullName = txtLastName.Text,
-               
+
             };
             users.Add(u);
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+         //   SaveFileDialog sfd = new SaveFileDialog();
+
+           // using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+            //{
+              //  foreach (var s in users)
+                //{
+                  //  sw.Write(s.ID);
+                    //sw.Write(s.FullName);
+
+                //}
+            
         }
     }
 }
